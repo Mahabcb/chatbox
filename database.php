@@ -1,5 +1,5 @@
 <?php
-$connection = new mysqli('localhost', 'maha', 'root'); // ma connexion à MYSQL
+$connection = new mysqli('localhost', 'root', 'root'); // ma connexion à MYSQL
 $sql = "CREATE DATABASE IF NOT EXISTS chat"
 ; // j'execute la requete
 
@@ -22,6 +22,7 @@ $sql1 = "CREATE TABLE IF NOT EXISTS chat.messages (
 // table users
 $sql = "CREATE TABLE IF NOT EXISTS chat.users (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    auteur VARCHAR(30) NOT NULL,
     name VARCHAR(30) NOT NULL
     )";
 

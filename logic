@@ -1,0 +1,24 @@
+chatbot
+    |
+    |_ src
+        |_ Controller : logique métier SOLID
+        |_ Entité : modele
+        |_bdd
+    |_template
+        |_ base.html (header footer navigation)
+        |_chat
+            |_chat.html (require header ...)
+            |_profile.html (description photo)
+
+1 classe = 1 responsabilité
+=> meilleure maintenance
+=> de meilleur test
+=> meilleures lecture
+
+Controller :
+logic : lire et poster des messages
+poster => traitement des données / traitement du formulaire (acces bdd)
+lire => accees à la bdd 
+delete => traitement de donées , acces a la bdd 
+update =>   
+CRUD = create, read, update, delete
